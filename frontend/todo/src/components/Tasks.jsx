@@ -43,6 +43,7 @@ const Tasks = () => {
             {editingId === task._id ? (
               <div>
                 <input
+                
                   type="text"
                   value={editedTaskValue}
                   onChange={handleTaskChange}
@@ -56,10 +57,10 @@ const Tasks = () => {
           </div>
           <div>
             <AiFillEdit
-              color="#27548A"
+              color="#FFEB3B"
               size={25}
-              style={{ cursor: "pointer" }}
-              onClick={() => handleEditClick(task)} 
+              style={{ cursor: "pointer",paddingRight:"8px" }}
+              onClick={() => handleEditClick(task)  } 
             />
           </div>
           <div>
